@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  server1:
+    dockerfile: Dockerfile.vs
+    image: vs
+    environment:
+      - APPID=video1.case.nimbra.io
+  server2:
+    dockerfile: Dockerfile.vs
+    image: vs
+    environment:
+      - APPID=video2.case.nimbra.io
+  server3:
+    dockerfile: Dockerfile.vs
+    image: vs
+    environment:
+      - APPID=video3.case.nimbra.io
+
