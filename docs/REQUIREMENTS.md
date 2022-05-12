@@ -3,9 +3,9 @@
 ## Functional
 1. The load balancer shall balance requests in a round-robin fashion, from clients between the following video servers - `video1.case.nimbra.io`, `video2.case.nimbra.io`, and `video3.case.nimbra.io`.
 1. The client shall send a JSON payload, containing a `channelId` property.
+1. The video server responds to a forwarded request by the load balancer with a small JSON payload.
 1. The video servers don't have to be real servers, they can be mocked or faked.
 1. The load balancer shall listen to client requests on a resource named `/allocateStream`.
-1. The video server responds to a forwarded request by the load balancer with a small JSON payload.
 1. The load balancer shall remove the `secret` property from the video server's payload and return it to the requesting client.
 
 ## Non-functional
